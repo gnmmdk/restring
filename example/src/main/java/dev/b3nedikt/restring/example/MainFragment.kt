@@ -41,9 +41,14 @@ class MainFragment : Fragment() {
 
         stringArrayTextView = view.findViewById(R.id.stringArrayTextView)
         quantityStringTextView = view.findViewById(R.id.quantityStringTextView)
+
         view.findViewById<View>(R.id.go_fragment_activity).setOnClickListener{
             startActivity(Intent(context,TestFragmentActivity::class.java))
         }
+        view.findViewById<View>(R.id.show_dialog_fragment).setOnClickListener{
+            TestDialog().show(requireActivity().supportFragmentManager,"dialog")
+        }
+
 
         stringNotInStringsXmlTextView = view.findViewById(R.id.stringNotInStringsXmlTextView)
         stringFromApplicationContextTextView =

@@ -44,6 +44,17 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/show_dialog_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showDialogFragment"
+        android:textColor="#FF333333"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/go_fragment_activity"/>
+
     <TextView
         android:id="@+id/stringTextView"
         android:layout_width="wrap_content"
