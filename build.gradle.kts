@@ -1,6 +1,10 @@
 buildscript {
 
     repositories {
+        maven {
+            url = uri("http://172.16.6.241:8081/repository/maven-public/")
+            isAllowInsecureProtocol = true
+        }
         google()
         mavenCentral()
     }
@@ -8,6 +12,10 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url = uri("http://172.16.6.241:8081/repository/maven-public/")
+            isAllowInsecureProtocol = true
+        }
         google()
         mavenCentral()
     }
