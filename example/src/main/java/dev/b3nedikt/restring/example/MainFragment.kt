@@ -1,6 +1,7 @@
 package dev.b3nedikt.restring.example
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -40,6 +41,9 @@ class MainFragment : Fragment() {
 
         stringArrayTextView = view.findViewById(R.id.stringArrayTextView)
         quantityStringTextView = view.findViewById(R.id.quantityStringTextView)
+        view.findViewById<View>(R.id.go_fragment_activity).setOnClickListener{
+            startActivity(Intent(context,TestFragmentActivity::class.java))
+        }
 
         stringNotInStringsXmlTextView = view.findViewById(R.id.stringNotInStringsXmlTextView)
         stringFromApplicationContextTextView =
